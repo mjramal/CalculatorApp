@@ -15,6 +15,8 @@
         android:background="#efefef"
         android:textSize="48sp"
         android:maxLength="12"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"
 
         />
     
@@ -29,6 +31,7 @@
 
 
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnSeven"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -39,6 +42,7 @@
             />
 
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnEight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -48,6 +52,7 @@
 
             />
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnNine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -57,12 +62,13 @@
 
             />
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="/"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
 
             />
 
@@ -77,19 +83,19 @@
         android:orientation="horizontal">
 
 
-
-
         <Button
             android:id="@+id/btnFour"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4"
             android:onClick="onDigit"
+            android:text="4"
 
             />
 
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnFive"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -97,8 +103,10 @@
             android:text="5"
             android:onClick="onDigit"
 
+
             />
         <Button
+            style="@style/Widget.AppCompat.Button"
             android:id="@+id/btnSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -113,7 +121,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="*"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
+            style="@style/Widget.AppCompat.Button"
 
             />
 
@@ -136,6 +145,7 @@
             android:layout_weight="1"
             android:text="1"
             android:onClick="onDigit"
+            style="@style/Widget.AppCompat.Button"
 
             />
 
@@ -146,6 +156,7 @@
             android:layout_weight="1"
             android:text="2"
             android:onClick="onDigit"
+            style="@style/Widget.AppCompat.Button"
 
             />
         <Button
@@ -155,6 +166,7 @@
             android:layout_weight="1"
             android:text="3"
             android:onClick="onDigit"
+            style="@style/Widget.AppCompat.Button"
 
             />
         <Button
@@ -163,7 +175,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
+            style="@style/Widget.AppCompat.Button"
 
             />
 
@@ -185,7 +198,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:onClick="onDigit"
+            android:onClick="onDecimalPoint"
+            style="@style/Widget.AppCompat.Button"
 
             />
 
@@ -194,8 +208,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0"
             android:onClick="onDigit"
+            android:text="0"
+            style="@style/Widget.AppCompat.Button"
 
             />
         <Button
@@ -204,7 +219,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CLR"
-            android:onClick="onDigit"
+            android:onClick="onClear"
+            style="@style/Widget.AppCompat.Button"
 
             />
         <Button
@@ -213,7 +229,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
+            style="@style/Widget.AppCompat.Button"
 
             />
 
@@ -232,6 +249,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="="
+                style="@style/Widget.AppCompat.Button"
+                android:onClick="onEqual"
                 />
 
 
